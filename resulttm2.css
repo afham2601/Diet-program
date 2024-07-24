@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.back {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.back:hover {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.result-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stage {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stage-red {
+    color: red;
+}
+
+.stage-green {
+    color: green;
+}
+
+.stage-emoji-left {
+    font-size: 1.5em; /* Adjust the size of the emoji */
+    margin-right: 10px; /* Add some space between the emoji and the text */
+}
+
+.stage-emoji-right {
+    font-size: 1.5em; /* Adjust the size of the emoji */
+    margin-left: 10px; /* Add some space between the emoji and the text */
+}
+
+.note {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.bmi-category {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 20px;
+    color: #000; /* Change description text color to dark */
+    background-color: #e0f7fa; /* Light blue background for the description */
+    padding: 10px; /* Add padding for better readability */
+    border-radius: 5px; /* Optional: rounded corners for the description box */
+}
+
+.register, .home {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make it block level for margin */
+    margin: 10px 0; /* Add some margin */
+}
+
+.register:hover, .home:hover {
+    background-color: #218838;
+}

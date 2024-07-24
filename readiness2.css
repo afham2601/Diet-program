@@ -1,0 +1,66 @@
+/* readiness.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #333333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #333333;
+}
+
+.status-message {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.status-approved {
+    color: green;
+}
+
+.status-rejected {
+    color: red;
+}
+
+.status-in-process {
+    color: rgb(60, 59, 57);
+}
+
+.info-box {
+    background-color: #e6f2ff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #333333;
+}
+
+.info-box p {
+    margin: 10px 0;
+}
+
+.info-box strong {
+    font-weight: bold;
+}

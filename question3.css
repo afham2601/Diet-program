@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    width: 100%;
+    text-align: left;
+}
+
+.back {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.back:hover {
+    background-color: #f0f0f0;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.question-wrapper {
+    text-align: left;
+    flex-grow: 1;
+    margin-right: 20px;
+    min-width: 250px;
+}
+
+.image-wrapper {
+    display:flex;
+    align-items: center;
+    position: relative;
+
+    
+}
+
+.weightloss-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: -250px;
+    margin-left: 600px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the options */
+    margin-bottom: 20px;
+    margin-right: 600px;
+}
+
+label.option {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100px; /* Set a fixed width */
+    transition: background-color 0.3s;
+}
+
+label.option:hover {
+    background-color: #d4d4d4;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    padding: 12px 24px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .question-wrapper {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

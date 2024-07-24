@@ -1,0 +1,141 @@
+/* frontpage.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    margin-top: -175px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 20;
+}
+
+.nav-links.active {
+    display: flex;
+    transform: translateX(0);
+}
+
+.nav-links .close-menu {
+    align-self: flex-end;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 10px 0;
+}
+
+main {
+    margin-top: 100px;
+    z-index: 1;
+}
+
+main h1 {
+    margin-bottom: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.buttonfemale, .buttonmale {
+    text-align: center;
+}
+
+ .buttonmale img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    padding-top: 15%;
+
+}
+.buttonfemale img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.buttonfemale button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: absolute; /* Enable positioning properties */
+    top: 350px; /* Move the button up by 10px */
+    right: 820px; /* Move the button right by 10px */
+    
+    
+}
+
+.buttonmale button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 35px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: absolute; /* Enable positioning properties */
+    top: 350px; /* Move the button up by 10px */
+    right: 590px; /* Move the button right by 10px */
+}
+
+.buttonfemale button:hover, .buttonmale button:hover {
+    background-color: #958e8e;
+}

@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    padding: 20px; /* Add padding to the body */
+    box-sizing: border-box; /* Include padding in the height */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px; /* Increase padding for more space inside the container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Adjust max-width to make the container wider */
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-top: 20px; /* Add some margin at the top to avoid touching the edge */
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Ensure form elements stretch to the container width */
+}
+
+label {
+    margin-top: 10px;
+    text-align: left;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    width: 100%; /* Make input fields full width */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Remove the up and down arrows from number input fields */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    flex: 1; /* This makes the input field take up the remaining space */
+    padding-right: 60px; /* Add space for the "Show" button */
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    cursor: pointer;
+    color: #000000;
+    right: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%; /* Make the button full width */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
